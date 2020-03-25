@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //1. make database connection + create database blogDB
-mongoose.connect("mongodb+srv://jakab:jakab2020@cluster0-ul9ti.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://username:password@cluster0-ul9ti.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true});
 
 //2. create a document schema
 const postSchema = {
